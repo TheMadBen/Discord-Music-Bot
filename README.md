@@ -40,37 +40,37 @@ A feature-rich Discord bot built with Python and Discord.py to bring dynamic mus
    cd discord-music-bot
 
 2. **Install FFmpeg (Full Build)**:
-
-FFmpeg is required for audio playback. Follow these steps to install the full build:
-
-1. Visit [Gyan.dev FFmpeg Builds](https://www.gyan.dev/ffmpeg/builds/).
-2. Under **"FFmpeg Builds"**, download the latest **"Full" build** in the zip file format (e.g., `ffmpeg-git-full.7z`).
-3. Extract the zip file to a directory of your choice, such as `C:\ffmpeg`.
-4. Navigate to the extracted directory and locate the `bin` folder (e.g., `C:\ffmpeg\bin`).
-5. Add the `bin` directory to your system's PATH environment variable:
-   - Press `Win + R`, type `sysdm.cpl`, and press Enter.
-   - Go to the **Advanced** tab and click **Environment Variables**.
-   - In the **System Variables** section, find the `Path` variable and click **Edit**.
-   - Click **New** and add the path to the FFmpeg `bin` folder (e.g., `C:\ffmpeg\bin`).
-   - Save your changes and restart your terminal.
-6. Verify the installation by running:
    ```bash
-   ffmpeg -version
+   FFmpeg is required for audio playback. Follow these steps to install the full build:
+   
+   1. Visit [Gyan.dev FFmpeg Builds](https://www.gyan.dev/ffmpeg/builds/).
+   2. Under **"FFmpeg Builds"**, download the latest **"Full" build** in the zip file format (e.g., `ffmpeg-git-full.7z`).
+   3. Extract the zip file to a directory of your choice, such as `C:\ffmpeg`.
+   4. Navigate to the extracted directory and locate the `bin` folder (e.g., `C:\ffmpeg\bin`).
+   5. Add the `bin` directory to your system's PATH environment variable:
+      - Press `Win + R`, type `sysdm.cpl`, and press Enter.
+      - Go to the **Advanced** tab and click **Environment Variables**.
+      - In the **System Variables** section, find the `Path` variable and click **Edit**.
+      - Click **New** and add the path to the FFmpeg `bin` folder (e.g., `C:\ffmpeg\bin`).
+      - Save your changes and restart your terminal.
+   6. Verify the installation by running:
+      ```bash
+      ffmpeg -version
 
 3. **Set Up a Discord Bot and Get the Token**:
-
-1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
-2. Click **New Application** and give your bot a name.
-3. Navigate to the **Bot** section and click **Add Bot**.
-4. Under **Token**:
-   - Click **Reset Token** and copy the token.
-   - Save the token in a file named `token.txt` in the project directory.
-5. Under **OAuth2** > **URL Generator**:
-   - Select the following bot permissions:
-     - `Read Messages/View Channels`
-     - `Send Messages`
-     - `Connect`
-     - `Speak`
-   - Copy the generated URL.
-   - Paste the URL into your browser and follow the prompts to invite the bot to your Discord server.
+   ```bash
+   1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
+   2. Click **New Application** and give your bot a name.
+   3. Navigate to the **Bot** section and click **Add Bot**.
+   4. Under **Token**:
+      - Click **Reset Token** and copy the token.
+      - Save the token in a file named `token.txt` in the project directory.
+   5. Under **OAuth2** > **URL Generator**:
+      - Select the following bot permissions:
+        - `Read Messages/View Channels`
+        - `Send Messages`
+        - `Connect`
+        - `Speak`
+      - Copy the generated URL.
+      - Paste the URL into your browser and follow the prompts to invite the bot to your Discord server.
 
