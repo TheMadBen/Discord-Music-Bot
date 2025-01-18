@@ -14,10 +14,19 @@ bot = commands.Bot(command_prefix="/", intents=intents)
 # remove the default help command so that we can use our own
 bot.remove_command("help")
 
+# Load the token from the 'token.txt' file
+def load_token():
+    try:
+        with open("token.txt", "r") as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        print("Error: 'token.txt' file not found.")
+        exit()
+
 async def main():
     async with bot:
         await bot.add_cog(help_cog(bot))
         await bot.add_cog(music_cog(bot))
-        await bot.start('MTI1NzgyNjk4ODM2MjY5NDc4OQ.Gw56ly.eDdkhBD3_-CTdP1y78TKGvRh09HEGRzEs-p6xI')
+        await bot.start(load_token())
 
 asyncio.run(main())
