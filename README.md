@@ -74,3 +74,8 @@ A feature-rich Discord bot built with Python and Discord.py to bring dynamic mus
       - Copy the generated URL.
       - Paste the URL into your browser and follow the prompts to invite the bot to your Discord server.
 
+4. **Install Dependencies**:
+      - discord.py
+      - yt-dlp
+      - youtubesearchpython
+      - asyncio
