@@ -40,7 +40,7 @@ A feature-rich Discord bot built with Python and Discord.py to bring dynamic mus
    cd discord-music-bot
 
 2. **Install FFmpeg (Full Build)**:
-   ```bash
+   
    FFmpeg is required for audio playback. Follow these steps to install the full build:
    
    1. Visit [Gyan.dev FFmpeg Builds](https://www.gyan.dev/ffmpeg/builds/).
@@ -58,7 +58,7 @@ A feature-rich Discord bot built with Python and Discord.py to bring dynamic mus
       ffmpeg -version
 
 3. **Set Up a Discord Bot and Get the Token**:
-   ```bash
+   
    1. Go to the [Discord Developer Portal](https://discord.com/developers/applications).
    2. Click **New Application** and give your bot a name.
    3. Navigate to the **Bot** section and click **Add Bot**.
